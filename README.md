@@ -64,8 +64,6 @@ Most of these are libraries I use every day. When something breaks I try to send
 
 <sub>Three separate Carbon maintainers merged those three, and five distinct people reviewed them. A shared component that produces wrong semantics does it for every consumer downstream at once.</sub>
 
-<sub>Three separate Carbon maintainers merged those three, and five distinct people reviewed them.</sub>
-
 ### 🔄 Open
 
 | Project | What was wrong |
@@ -77,8 +75,6 @@ Most of these are libraries I use every day. When something breaks I try to send
 | **[Medusa](https://github.com/medusajs/medusa)** · [#16269](https://github.com/medusajs/medusa/pull/16269) | The inventory item was never created when `manage_inventory` was flipped on |
 | **[react-navigation](https://github.com/react-navigation/react-navigation)** · [#13197](https://github.com/react-navigation/react-navigation/pull/13197) | `TabView`'s pager drifted out of sync with a controlled `index` |
 | **[IBM Carbon](https://github.com/carbon-design-system/carbon)** · [#22711](https://github.com/carbon-design-system/carbon/pull/22711) | `Textarea` — the input was never described by its helper text |
-
----
 
 ---
 
