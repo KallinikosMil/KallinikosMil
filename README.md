@@ -46,8 +46,8 @@
 ## 🔧 Open source
 
 <p align="center">
-  <img src="https://img.shields.io/badge/merged-4-2EA043?style=flat-square&labelColor=161B22" alt="4 merged">
-  <img src="https://img.shields.io/badge/open-7-1F6FEB?style=flat-square&labelColor=161B22" alt="7 open">
+  <img src="https://img.shields.io/badge/merged-5-2EA043?style=flat-square&labelColor=161B22" alt="5 merged">
+  <img src="https://img.shields.io/badge/open-6-1F6FEB?style=flat-square&labelColor=161B22" alt="6 open">
   <img src="https://img.shields.io/badge/IBM_Carbon-3_merged-005A9C?style=flat-square&labelColor=161B22" alt="IBM Carbon">
 </p>
 
@@ -57,6 +57,7 @@ Most of these are libraries I use every day. When something breaks I try to send
 
 | Project | What was wrong |
 |---|---|
+| **[react-native-paper](https://github.com/callstack/react-native-paper)** · [#5054](https://github.com/callstack/react-native-paper/pull/5054) | The Babel plugin emitted Windows path separators into import specifiers — a module specifier is not a filesystem path. Added a Windows CI job so it stays fixed |
 | **[IBM Carbon](https://github.com/carbon-design-system/carbon)** · [#22858](https://github.com/carbon-design-system/carbon/pull/22858) | `cds-text-input` — the label was never associated with the input, and helper and error text were wired through `aria-describedby` as a boolean |
 | **[IBM Carbon](https://github.com/carbon-design-system/carbon)** · [#22815](https://github.com/carbon-design-system/carbon/pull/22815) | `cds-radio-button` — the `for`/`id` pair did not match, so the label targeted nothing |
 | **[IBM Carbon](https://github.com/carbon-design-system/carbon)** · [#22668](https://github.com/carbon-design-system/carbon/pull/22668) | `Modal` — non-alert modals lost their default `dialog` role |
@@ -68,7 +69,6 @@ Most of these are libraries I use every day. When something breaks I try to send
 
 | Project | What was wrong |
 |---|---|
-| **[react-native-paper](https://github.com/callstack/react-native-paper)** · [#5054](https://github.com/callstack/react-native-paper/pull/5054) <br> ![approved](https://img.shields.io/badge/approved-2EA043?style=flat-square&labelColor=161B22) | The Babel plugin emitted Windows path separators into import specifiers. Added a Windows CI job so it stays fixed |
 | **[react-native-community/cli](https://github.com/react-native-community/cli)** · [#2827](https://github.com/react-native-community/cli/pull/2827) | `yarn build` silently emitted no JavaScript on Windows — all 55 unit suites failed to start as a result |
 | **[Ignite](https://github.com/infinitered/ignite)** · [#3040](https://github.com/infinitered/ignite/pull/3040) | `pnpm test` could not start on Windows: POSIX inline env-var syntax, setting a variable that had been dead since ts-jest dropped the check |
 | **[Re.Pack](https://github.com/callstack/repack)** · [#1450](https://github.com/callstack/repack/pull/1450) | Five tests compared platform-native paths to POSIX literals, so the suite was red on Windows against correct code |
