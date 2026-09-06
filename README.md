@@ -63,7 +63,7 @@ Most of these are libraries I use every day. When something breaks I try to send
 | **[IBM Carbon](https://github.com/carbon-design-system/carbon)** · [#22668](https://github.com/carbon-design-system/carbon/pull/22668) | `Modal` — non-alert modals lost their default `dialog` role |
 | **[invest-igator](https://github.com/PanagiotisKaraliolios/invest-igator)** · [#80](https://github.com/PanagiotisKaraliolios/invest-igator/pull/80) | Five silent correctness bugs across portfolio maths, API keys, import and charts — each with a reproduction test |
 
-<sub>Three separate Carbon maintainers merged those three, and five distinct people reviewed them. A shared component that produces wrong semantics does it for every consumer downstream at once.</sub>
+<sub>Five merges, five different maintainers — three of them at IBM Carbon — and eight reviewers between them. A shared component that produces wrong semantics does it for every consumer downstream at once.</sub>
 
 ### 🔄 Open
 
