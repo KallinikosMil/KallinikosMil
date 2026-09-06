@@ -47,7 +47,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/merged-5-2EA043?style=flat-square&labelColor=161B22" alt="5 merged">
-  <img src="https://img.shields.io/badge/open-6-1F6FEB?style=flat-square&labelColor=161B22" alt="6 open">
+  <img src="https://img.shields.io/badge/open-7-1F6FEB?style=flat-square&labelColor=161B22" alt="7 open">
   <img src="https://img.shields.io/badge/IBM_Carbon-3_merged-005A9C?style=flat-square&labelColor=161B22" alt="IBM Carbon">
 </p>
 
@@ -72,6 +72,7 @@ Most of these are libraries I use every day. When something breaks I try to send
 | **[react-native-community/cli](https://github.com/react-native-community/cli)** · [#2827](https://github.com/react-native-community/cli/pull/2827) | `yarn build` silently emitted no JavaScript on Windows — all 55 unit suites failed to start as a result |
 | **[Ignite](https://github.com/infinitered/ignite)** · [#3040](https://github.com/infinitered/ignite/pull/3040) | `pnpm test` could not start on Windows: POSIX inline env-var syntax, setting a variable that had been dead since ts-jest dropped the check |
 | **[Re.Pack](https://github.com/callstack/repack)** · [#1450](https://github.com/callstack/repack/pull/1450) | Five tests compared platform-native paths to POSIX literals, so the suite was red on Windows against correct code |
+| **[Builder Bob](https://github.com/callstack/react-native-builder-bob)** · [#953](https://github.com/callstack/react-native-builder-bob/pull/953) | `bob init` wrote Windows path separators into the `main`, `module` and `exports` fields it generates — those are module specifiers, not file paths |
 | **[Medusa](https://github.com/medusajs/medusa)** · [#16269](https://github.com/medusajs/medusa/pull/16269) | The inventory item was never created when `manage_inventory` was flipped on |
 | **[react-navigation](https://github.com/react-navigation/react-navigation)** · [#13197](https://github.com/react-navigation/react-navigation/pull/13197) | `TabView`'s pager drifted out of sync with a controlled `index` |
 | **[IBM Carbon](https://github.com/carbon-design-system/carbon)** · [#22711](https://github.com/carbon-design-system/carbon/pull/22711) | `Textarea` — the input was never described by its helper text |
