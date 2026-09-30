@@ -46,8 +46,8 @@
 ## 🔧 Open source
 
 <p align="center">
-  <img src="https://img.shields.io/badge/merged-8-2EA043?style=flat-square&labelColor=161B22" alt="8 merged">
-  <img src="https://img.shields.io/badge/open-6-1F6FEB?style=flat-square&labelColor=161B22" alt="6 open">
+  <img src="https://img.shields.io/badge/merged-9-2EA043?style=flat-square&labelColor=161B22" alt="9 merged">
+  <img src="https://img.shields.io/badge/open-5-1F6FEB?style=flat-square&labelColor=161B22" alt="5 open">
   <img src="https://img.shields.io/badge/IBM_Carbon-3_merged-005A9C?style=flat-square&labelColor=161B22" alt="IBM Carbon">
 </p>
 
@@ -57,6 +57,7 @@ Most of these are libraries I use every day. When something breaks I try to send
 
 | Project | What was wrong |
 |---|---|
+| **[Re.Pack](https://github.com/callstack/repack)** · [#1457](https://github.com/callstack/repack/pull/1457) | The assets loader built a URL with `path.join`, so on Windows any bundle containing a remote asset failed to build with `Invalid URL` |
 | **[Medusa](https://github.com/medusajs/medusa)** · [#16269](https://github.com/medusajs/medusa/pull/16269) | The inventory item was never created when `manage_inventory` was flipped on for an existing variant — two review rounds, integration-tested against Postgres and Redis |
 | **[Re.Pack](https://github.com/callstack/repack)** · [#1450](https://github.com/callstack/repack/pull/1450) | Five tests compared platform-native paths to POSIX literals, so the suite was red on Windows against correct code — including a case where a rootless path collapsed to a bare `` that Windows read as a UNC share |
 | **[Builder Bob](https://github.com/callstack/react-native-builder-bob)** · [#953](https://github.com/callstack/react-native-builder-bob/pull/953) | `bob init` wrote Windows path separators into the `main`, `module` and `exports` fields it generates — those are module specifiers, not file paths |
@@ -66,7 +67,7 @@ Most of these are libraries I use every day. When something breaks I try to send
 | **[IBM Carbon](https://github.com/carbon-design-system/carbon)** · [#22668](https://github.com/carbon-design-system/carbon/pull/22668) | `Modal` — non-alert modals lost their default `dialog` role |
 | **[invest-igator](https://github.com/PanagiotisKaraliolios/invest-igator)** · [#80](https://github.com/PanagiotisKaraliolios/invest-igator/pull/80) | Five silent correctness bugs across portfolio maths, API keys, import and charts — each with a reproduction test |
 
-<sub>Eight merges across six projects, approved by ten different maintainers — three at IBM Carbon, three at Callstack, one at Medusa. A shared component that produces wrong semantics does it for every consumer downstream at once.</sub>
+<sub>Nine merges across six projects, approved by ten different maintainers — three at IBM Carbon, four at Callstack, one at Medusa. A shared component that produces wrong semantics does it for every consumer downstream at once.</sub>
 
 ### 🔄 Open
 
@@ -74,7 +75,6 @@ Most of these are libraries I use every day. When something breaks I try to send
 |---|---|
 | **[react-native-community/cli](https://github.com/react-native-community/cli)** · [#2827](https://github.com/react-native-community/cli/pull/2827) | `yarn build` silently emitted no JavaScript on Windows — all 55 unit suites failed to start as a result |
 | **[Ignite](https://github.com/infinitered/ignite)** · [#3040](https://github.com/infinitered/ignite/pull/3040) | `pnpm test` could not start on Windows: POSIX inline env-var syntax, setting a variable that had been dead since ts-jest dropped the check |
-| **[Re.Pack](https://github.com/callstack/repack)** · [#1457](https://github.com/callstack/repack/pull/1457) | The assets loader built a URL with `path.join`, so on Windows any bundle containing a remote asset failed with `Invalid URL` |
 | **[Re.Pack](https://github.com/callstack/repack)** · [#1458](https://github.com/callstack/repack/pull/1458) | Adds `windows-latest` to the test matrix, as the maintainer asked for on #1450 |
 | **[react-navigation](https://github.com/react-navigation/react-navigation)** · [#13197](https://github.com/react-navigation/react-navigation/pull/13197) | `TabView`'s pager drifted out of sync with a controlled `index` |
 | **[IBM Carbon](https://github.com/carbon-design-system/carbon)** · [#22711](https://github.com/carbon-design-system/carbon/pull/22711) | `Textarea` — the input was never described by its helper text |
